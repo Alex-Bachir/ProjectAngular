@@ -10,7 +10,7 @@
   }
   
   .logo img {
-    height: 30px;
+    height: 90px;
   }
   
   .nav-links {
@@ -22,9 +22,54 @@
     color: black;
     text-decoration: none;
     font-weight: 500;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
   }
   
   .nav-links a:hover {
     text-decoration: underline;
+  }
+
+  .navbar2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002f6c;
+    padding: 10px;
+    height: 50px;
+    align-items: center;
+
+    
+  }
+
+  input {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    
+  }
+
+  ::placeholder {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  button {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    
+  }
+
+  .search-bar input {
+    font-size: 24px; 
+    padding-left: 15px;
+  }
+  
+  .valide {
+    height: 40px;
+    font-size: 20px;
+    width: 100px;
   }
   
