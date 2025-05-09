@@ -1,56 +1,58 @@
-.bandeau {
-    background-color: #d3d3d3;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Style du footer */
+.top-banner {
+    background-color: #c0c0c0;
+    color: #000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.banner-text {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
 .footer {
-    background-color: #0077c2;
-    color: white;
+    background-color: #0077be;
+    color: #000;
     padding: 40px 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.footer-section {
+.footer-column {
     width: 30%;
     min-width: 250px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.footer-section h3 {
-    font-size: 18px;
+.footer-title {
+    font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.footer-section p, .footer-section a {
-    display: block;
-    color: white;
-    text-decoration: none;
+.footer-content {
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
-.footer-section a:hover {
+.footer-content a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
     text-decoration: underline;
 }
 
 .copyright {
     width: 100%;
     text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-section {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+    margin-top: 40px;
 }
