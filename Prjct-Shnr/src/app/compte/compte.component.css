@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.containerCompte {
+    background-color: #002f6c;
+    height: 150px;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.containerSouhait {
+    background-color: #002f6c;
+    height: 150px;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+
+.containerHistorique {
+    background-color: #002f6c;
+    height: 150px;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+
+}
+

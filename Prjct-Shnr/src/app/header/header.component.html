@@ -1,10 +1,13 @@
 <nav class="navbar">
   <div class="logo">
-    <img src="StudioShinra.png" alt="Logo" />
+    <a routerLink="">
+      <img src="StudioShinra.png" alt="Logo" />
+    </a>
   </div>
   <div class="nav-links">
-    <a href="#">Mon Compte</a>
-    <a href="#">Article</a>
+
+    <a routerLink="compte" routerLinkActive="active">Mon Compte</a>
+    <a routerLink="panier">Panier</a>
   </div>
 </nav>
 <nav class="navbar2">
@@ -14,8 +17,11 @@
     </form>
   </div>
   <div class="btn">
-    <button class="catalogue-button">
-      Catalogue
-    </button>
+    <a routerLink="catalogue">
+      <button class="catalogue-button">Catalogue</button>
+    </a>
+
+
+
   </div>
 </nav>

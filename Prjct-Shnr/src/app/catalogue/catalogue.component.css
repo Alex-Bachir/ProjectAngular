@@ -1,0 +1,246 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* GLOBAL STYLES */
+.body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES */
+.header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    
+}
+
+.navigation {
+    padding: 0 15px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links .active {
+    font-weight: bold;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #333;
+}
+
+/* MAIN CONTENT LAYOUT */
+.main-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    width: 200px;
+    background-color: #0088cc;
+    color: white;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
+    background-color: #0066aa;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.filter-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+}
+
+.filter-title {
+    padding: 0 15px 10px 15px;
+    font-weight: bold;
+}
+
+.filter-options {
+    padding: 0 15px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-option input {
+    margin-right: 8px;
+}
+
+/* ALPHABET FILTERS */
+.alphabet-filters {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.letter-btn {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* PRODUCTS AREA STYLES */
+.products-area {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+/* PRODUCTS HEADER */
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.product-count {
+    font-weight: bold;
+}
+
+.sort-dropdown select {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+/* PRODUCTS GRID */
+.products-grid {
+    margin-bottom: 20px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    width: 23%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    height: 150px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #0088cc;
+    font-weight: bold;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+}
+
+.pagination-controls {
+    display: flex;
+}
+
+.page-number {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.page-number.active {
+    background-color: #0088cc;
+    color: white;
+}
+
+.page-number.next {
+    background-color: white;
+    font-weight: bold;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .product-row {
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+    
+    .pagination {
+        flex-direction: column;
+    }
+    
+    .pagination-info {
+        margin-bottom: 10px;
+    }
+}

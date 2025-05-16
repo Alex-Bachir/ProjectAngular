@@ -1,0 +1,38 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    /* margin: 20px; */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+  
+  .product {
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    background-color: #ccc;
+    width: 100%;
+    padding-top: 100%; /* carré */
+    border-radius: 5px;
+    height: 100px;
+  }
+  
+  .title {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
