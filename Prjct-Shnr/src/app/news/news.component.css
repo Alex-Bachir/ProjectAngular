@@ -22,6 +22,7 @@
     padding-top: 100%; /* carré */
     border-radius: 5px;
     height: 100px;
+    box-shadow: 2px 3px 20px ;
   }
   
   .title {
@@ -34,5 +35,16 @@
     font-size: 14px;
     font-weight: bold;
     color: #0066cc;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    
+  }
+
+  .photo img {
+    box-shadow: 2px 3px 20px ;
   }
   

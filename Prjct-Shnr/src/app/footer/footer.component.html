@@ -1,12 +1,82 @@
 
 
-    <div class="top-banner">
-        <div class="banner-text">
-            Bandeau<br>
-            qui defile<br>
-            facebook etc
-        </div>
-    </div>
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes slide {
+        0% { transform: translateX(800px); }
+        100% { transform: translateX(-600px); }
+      }
+      
+      .social-icons {
+        animation: slide 20s linear infinite;
+      }
+      
+      .banner-bg {
+        fill: #f0f0f0;
+      }
+      
+      .facebook-logo {
+        fill: #1877F2;
+      }
+      
+      .instagram-logo-bg {
+        fill: url(#instagram-gradient);
+      }
+      
+      .x-logo {
+        fill: #000000;
+      }
+      
+      .social-icon {
+        filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      }
+    </style>
+    
+    <linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFDC80"/>
+      <stop offset="25%" style="stop-color:#FCAF45"/>
+      <stop offset="50%" style="stop-color:#F77737"/>
+      <stop offset="75%" style="stop-color:#C13584"/>
+      <stop offset="100%" style="stop-color:#5851DB"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" class="banner-bg" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">Suivez-nous sur les réseaux sociaux</text>
+  
+  <!-- Animated Social Media Icons -->
+  <g class="social-icons">
+    <!-- Facebook -->
+    <g class="social-icon" transform="translate(0, 80)">
+      <circle cx="150" cy="40" r="40" class="facebook-logo"/>
+      <path d="M165 40h-10v-10c0-2.8 2.2-5 5-5h5v-10h-5c-8.3 0-15 6.7-15 15v10h-10v10h10v30h10V50h10l5-10z" fill="white"/>
+      <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">Facebook</text>
+    </g>
+    
+    <!-- Instagram -->
+    <g class="social-icon" transform="translate(300, 80)">
+      <circle cx="150" cy="40" r="40" class="instagram-logo-bg"/>
+      <circle cx="150" cy="40" r="32" fill="white"/>
+      <circle cx="150" cy="40" r="27" class="instagram-logo-bg"/>
+      <circle cx="165" cy="25" r="5" fill="white"/>
+      <circle cx="150" cy="40" r="13" fill="white"/>
+      <path d="M175 55h-50c-2.8 0-5-2.2-5-5v-20c0-2.8 2.2-5 5-5h50c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5z" fill="none" stroke="white" stroke-width="2"/>
+      <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">Instagram</text>
+    </g>
+    
+    <!-- X (Twitter) -->
+    <g class="social-icon" transform="translate(600, 80)">
+      <circle cx="150" cy="40" r="40" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+      <path class="x-logo" d="M170 25h-10l-15 17.5L130 25h-10l20 25-20 25h10l15-17.5 15 17.5h10l-20-25z"/>
+      <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">X</text>
+    </g>
+  </g>
+</svg>
     
     <div class="footer">
         <div class="footer-column">

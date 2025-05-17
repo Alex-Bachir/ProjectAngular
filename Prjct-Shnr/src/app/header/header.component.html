@@ -5,8 +5,32 @@
     </a>
   </div>
   <div class="nav-links">
+    <!-- {{'suis-je connecté ? ' + isConnected }} -->
 
-    <a routerLink="compte" routerLinkActive="active">Mon Compte</a>
+    @if(isConnected) {
+      <!-- Le code html de quand je suis connecté  -->
+      <a routerLink="compte" routerLinkActive="active">Mon Compte</a>
+      <button class="btnConnexion" (click)="deconnexion()">
+            Se déconnecter
+      </button>
+    } @else {
+      <!-- Le code html de quand je suis pas connecté  -->
+       <div class="containerLog">
+        <div class="inscription">
+          <button routerLink="inscription" class="btnInscription">
+            S'inscrire
+          </button>
+
+        </div>
+        <div class="connexion">
+          <button class="btnConnexion" routerLink="connexion">
+            Se connecter
+          </button>
+        </div>
+       </div>
+    }
+    
+    
     <a routerLink="panier">Panier</a>
   </div>
 </nav>
