@@ -19,10 +19,12 @@
   .image-placeholder {
     background-color: #ccc;
     width: 100%;
-    padding-top: 100%; /* carré */
+    
     border-radius: 5px;
-    height: 100px;
+    height: 100%;
+    object-fit: cover;
     box-shadow: 2px 3px 20px ;
+    
   }
   
   .title {
@@ -41,6 +43,7 @@
     display: flex;
     justify-content: center;
     margin: 50px;
+    
     
   }
 

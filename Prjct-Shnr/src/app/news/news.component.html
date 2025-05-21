@@ -5,7 +5,7 @@
     <div class="grid">
         <!-- Remplacer par ngfor -->
         <div class="product" *ngFor="let figurine of figurines;">
-            <img [src]="figurine.url" alt="Image figurine" class="image-placeholder"/>
+            <img [src]="figurine.image" alt="Image figurine" class="image-placeholder"/>
             <p class="title">{{ figurine.nom }}</p>
             <p class="price">{{ figurine.prix }} €</p>
         </div>
